@@ -1,0 +1,26 @@
+{
+  "mode": "research-methods",
+  "description": "Final selected architecture and training hyperparameters; no fitted study state",
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "synthetic_split_seed": 20261016,
+  "inner_split_seed": 8161,
+  "risk_seeds": [42, 142, 242],
+  "risk_landmarks_per_patient": 12,
+  "any_aki": {"iterations": 350, "depth": 5, "l2_leaf_reg": 20.0},
+  "moderate_severe_aki": {"iterations": 350, "depth": 4, "l2_leaf_reg": 15.0},
+  "learning_rate": 0.035,
+  "s2_assist_weight": 0.5,
+  "response_seeds": [20260926, 20260927, 20260928],
+  "response_sample_seed": 20260926,
+  "curve_scale_sample_seed": 20260927,
+  "response_landmarks_per_patient": 6,
+  "response_epochs": 8,
+  "response_batch_size": 4096,
+  "response_learning_rate": 0.0005,
+  "response_weight_decay": 0.002,
+  "bootstrap_seed": 20261007,
+  "bootstrap_reps": 1000,
+  "threads": 2
+}
+

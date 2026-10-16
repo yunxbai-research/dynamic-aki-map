@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aki-map-methods"
+version = "0.1.0"
+description = "Methods and synthetic demonstration of dynamic AKI prediction and MAP thresholds"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "numpy>=2.1,<3", "pandas>=2.3,<3", "scipy>=1.15,<2",
+  "scikit-learn>=1.7,<1.8", "catboost>=1.2.10,<1.3", "torch>=2.6,<3"
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<9"]
+
+[project.scripts]
+aki-map-demo = "aki_map.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+aki_map = ["*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

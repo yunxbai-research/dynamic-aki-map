@@ -1,0 +1,65 @@
+[
+  {
+    "source_id": "temporal_processing",
+    "functions": [
+      "patient_grid",
+      "sequence_and_summary"
+    ],
+    "source_sha256": "0b644f68aad1f3e0eaff7273bb8716ede7c4ce2d1a5ec9cbb5282b44cb145d56"
+  },
+  {
+    "source_id": "feature_processing",
+    "functions": [
+      "multiscale_features"
+    ],
+    "source_sha256": "20e5cafa541b46cb8a6bce013775f58abf6e025f7dd12f44c9362e24fb46f677"
+  },
+  {
+    "source_id": "feature_processing",
+    "functions": [
+      "stage_sample_pairs"
+    ],
+    "source_sha256": "20e5cafa541b46cb8a6bce013775f58abf6e025f7dd12f44c9362e24fb46f677"
+  },
+  {
+    "source_id": "risk_model_selection",
+    "functions": [
+      "uniform_pairs"
+    ],
+    "source_sha256": "bb6665077668fb37c6f86cdc4957d462042e67358f291e59fef7920eb0f3368a"
+  },
+  {
+    "source_id": "probability_calibration",
+    "functions": [
+      "fit_calibration",
+      "calibrate"
+    ],
+    "source_sha256": "906f2568d174961c975212c1c26e025d9220d4661904b7c10c84b353b6ca0a22"
+  },
+  {
+    "source_id": "map_response_thresholds",
+    "functions": [
+      "encode_fit",
+      "encode",
+      "candidate_curves",
+      "choose_target"
+    ],
+    "source_sha256": "e063ff6e88778167d03a216c7cd284fcf8bcede6fd1aaa37885dbf32bb7d6317"
+  },
+  {
+    "source_id": "map_response_network",
+    "functions": [
+      "NativeMAPResponseHead"
+    ],
+    "source_sha256": "10c209dfd06bd67412dd6921936d5fc7f044deb12825a5033e08aadd7d5a8604"
+  },
+  {
+    "source_id": "risk_model_selection",
+    "functions": [
+      "configurations",
+      "s1_scores",
+      "select_candidate"
+    ],
+    "source_sha256": "bb6665077668fb37c6f86cdc4957d462042e67358f291e59fef7920eb0f3368a"
+  }
+]

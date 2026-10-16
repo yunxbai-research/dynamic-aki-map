@@ -1,0 +1,26 @@
+{
+  "mode": "synthetic-smoke-test",
+  "description": "Same architecture/fold logic with fewer trees, epochs, seeds and bootstrap replicates",
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "synthetic_split_seed": 20261016,
+  "inner_split_seed": 8161,
+  "risk_seeds": [42],
+  "risk_landmarks_per_patient": 12,
+  "any_aki": {"iterations": 20, "depth": 5, "l2_leaf_reg": 20.0},
+  "moderate_severe_aki": {"iterations": 20, "depth": 4, "l2_leaf_reg": 15.0},
+  "learning_rate": 0.035,
+  "s2_assist_weight": 0.5,
+  "response_seeds": [20260926],
+  "response_sample_seed": 20260926,
+  "curve_scale_sample_seed": 20260927,
+  "response_landmarks_per_patient": 6,
+  "response_epochs": 2,
+  "response_batch_size": 4096,
+  "response_learning_rate": 0.0005,
+  "response_weight_decay": 0.002,
+  "bootstrap_seed": 20261007,
+  "bootstrap_reps": 30,
+  "threads": 2
+}
+
